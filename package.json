@@ -1,0 +1,29 @@
+{
+  "name": "npm-nuget",
+  "version": "0.0.0",
+  "description": "Run nuget.exe from Node.js",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node ./scripts/download-nuget",
+    "test": "todo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timmurphy/npm-nuget.git"
+  },
+  "keywords": [],
+  "author": "Tim Murphy <tim@26tp.com> (https://timmurphy.it)",
+  "contributors": [
+    "Tim Murphy <tim@26tp.com> (https://timmurphy.it)"
+  ],
+  "license": "MIT",
+  "bin": {
+    "npm-nuget": "./bin/npm-nuget"
+  },
+  "homepage": "https://github.com/timmurphy/npm-nuget#readme",
+  "dependencies": {
+    "request": "^2.71.0",
+    "shelljs": "^0.6.0"
+  },
+  "devDependencies": {}
+}
