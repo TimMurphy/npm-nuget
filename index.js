@@ -1,4 +1,7 @@
 'use strict';
+
 module.exports = {
-    nuget: require('./lib/nuget')
+    cmd: require('./lib/cmd'),
+    exec: require('./lib/exec'),
+    path: require('./lib/path'),
 };

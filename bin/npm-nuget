@@ -1,2 +1,17 @@
 #!/usr/bin/env node
-require('../lib/npm-nuget')();
+const exec = require('../lib/exec');
+
+const argv = getCommandLineArguments();
+const args = argv.join(' ');
+
+exec(args);
+
+// Get the arguments to pass to MSBuild.
+function getCommandLineArguments() {
+    // process.argv.slice(2) is used because:
+    //  
+    // process.argv[0] is {path}\node.exe so we ignore it.
+    // process.argv[1] is {path}\npm-msbuild so we ignore it.
+    // process.argv[2 ... n] are the arguments we need to pass msbuild
+    return process.argv.slice(2); 
+}
