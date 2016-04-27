@@ -1,7 +1,7 @@
-const fs = require('fs');
-const request = require('request');
+var fs = require('fs');
+var request = require('request');
 
-const nuget = './nuget.exe';
+var nuget = './nuget.exe';
 
 console.info('Downloading \'nuget.exe\'...');
 console.info();

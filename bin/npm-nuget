@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-const exec = require('../lib/exec');
+var exec = require('../lib/exec');
 
-const argv = getCommandLineArguments();
-const args = argv.join(' ');
+var argv = getCommandLineArguments();
+var args = argv.join(' ');
 
 exec(args);
 
