@@ -3,7 +3,7 @@ const request = require('request');
 
 const nuget = './nuget.exe';
 
-console.info(`Downloading 'nuget.exe'...`);
+console.info('Downloading \'nuget.exe\'...');
 console.info();
 
 request
@@ -13,9 +13,9 @@ request
     })
     .on('response', function (response) {
         if (response.statusCode == 200) {
-            console.info(`Successfully downloaded 'nuget.exe'.`);
+            console.info('Successfully downloaded \'nuget.exe\'.');
         } else {
-            console.error(`Downloading 'nuget.exe' failed. statusCode '${response.statusCode}'`);
+            console.error('Downloading \'nuget.exe\' failed. statusCode \'' + response.statusCode + '\'');
         }
     })
     .pipe(fs.createWriteStream(nuget));
