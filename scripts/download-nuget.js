@@ -7,7 +7,7 @@ console.info('Downloading \'nuget.exe\'...');
 console.info();
 
 request
-    .get('https://dist.nuget.org/win-x86-commandline/v3.4.3/nuget.exe')
+    .get('https://dist.nuget.org/win-x86-commandline/v5.10.0/nuget.exe')    
     .on('error', function (err) {
         console.error(err);
     })
